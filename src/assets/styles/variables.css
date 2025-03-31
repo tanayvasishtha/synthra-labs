@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #8A2BE2;
+  --primary-light: #B980FF;
+  --primary-dark: #4B0082;
+  --light-bg: #FFFFFF;
+  --dark-bg: #121212;
+  --light-card-bg: rgba(255, 255, 255, 0.1);
+  --dark-card-bg: rgba(30, 30, 30, 0.3);
+  --light-text: #FFFFFF;
+  --dark-text: #000000;
+  --gray-text: #666666;
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #4B0082 0%, #1A0029 100%);
+  color: var(--light-text);
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Ensure no other background covers the particles */
+.page-container {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
