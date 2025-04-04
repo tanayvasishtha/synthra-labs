@@ -23,7 +23,14 @@ const Container = styled.div`
 
 const Title = styled.h1`
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin: 0 0 15px 0; /* Top Right Bottom Left */
+  font-weight: 700;
+  line-height: 1.2;
+  
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
 `;
 
 const Subtitle = styled.p`
@@ -82,7 +89,7 @@ const InternshipCard = styled.div`
     box-shadow: 0 15px 30px rgba(138, 43, 226, 0.2);
   }
   
-  ${props => props.comingSoon && `
+  ${props => props.$comingSoon && `
     opacity: 0.8;
   `}
 `;
@@ -176,6 +183,7 @@ const ProcessSteps = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
+    padding-left:40px;
     
     &::before {
       top: 0;
@@ -196,9 +204,15 @@ const Step = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+    align-items: flex-start;
+    margin-bottom: 40px;
     text-align: left;
+  }
+`;
+
+const StepContent = styled.div`
+  @media (max-width: 768px) {
+    padding-top: 10px;
   }
 `;
 
@@ -216,7 +230,10 @@ const StepNumber = styled.div`
   margin: 0 auto 20px;
   
   @media (max-width: 768px) {
-    margin: 0 30px 0 0;
+    margin: 0 20px 0 0;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
   }
 `;
 
@@ -382,7 +399,7 @@ const Internships = () => {
             <CategoryTitle>Technical Domains</CategoryTitle>
             <InternshipGrid>
               {technicalDomains.map((domain, index) => (
-                <InternshipCard key={index} comingSoon={domain.comingSoon}>
+                <InternshipCard key={index} $comingSoon={domain.comingSoon}>
                   <Icon>
                     <i className={domain.icon}></i>
                   </Icon>
@@ -435,8 +452,10 @@ const Internships = () => {
             {processSteps.map((step, index) => (
               <Step key={index}>
                 <StepNumber>{step.number}</StepNumber>
+                <StepContent>
                 <StepTitle>{step.title}</StepTitle>
                 <p>{step.description}</p>
+                </StepContent>
               </Step>
             ))}
           </ProcessSteps>
