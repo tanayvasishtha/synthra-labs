@@ -118,7 +118,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📬 Contact
 
-Connect with us on [LinkedIn](https://www.linkedin.com/company/synthralabs) or email us at info@synthralabs.in.
+Connect with us on [LinkedIn](https://www.linkedin.com/company/synthra-labs/) or email us at synthralabs.official@gmail.com
 
 ---
 
