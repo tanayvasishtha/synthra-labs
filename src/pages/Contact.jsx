@@ -76,7 +76,7 @@ const Contact = () => {
         <Container>
           <ContactInfo>
             <p>Have questions about our internship programs or services? We'd love to hear from you! Fill out our contact form and our team will get back to you as soon as possible.</p>
-            <p>For urgent inquiries, you can reach us at <strong>info@synthralabs.in</strong></p>
+            <p>For urgent inquiries, you can reach us at <strong>synthralabs.official@gmail.com</strong></p>
             <ContactButton href={formLinks.contact} target="_blank" rel="noopener noreferrer">
               Contact Form
             </ContactButton>
