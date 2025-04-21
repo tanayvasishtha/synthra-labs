@@ -137,7 +137,7 @@ const Services = () => {
                 </Icon>
                 <ServiceTitle>{service.title}</ServiceTitle>
                 <ServiceDescription>{service.description}</ServiceDescription>
-                <LearnMore href="https://www.linkedin.com/company/synthralabs">Learn More</LearnMore>
+                <LearnMore href="https://www.linkedin.com/company/synthra-labs/">Learn More</LearnMore>
               </ServiceCard>
             ))}
           </ServicesGrid>
