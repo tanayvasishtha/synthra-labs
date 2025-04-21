@@ -153,11 +153,11 @@ const Footer = () => {
           </FooterLinks>
           <FooterContact>
             <h3>Contact Us</h3>
-            <p><i className="fas fa-envelope"></i> info@synthralabs.in</p>
-            <p><i className="fas fa-phone"></i> +91 XXXXXXXXXX</p>
+            <p><i className="fas fa-envelope"></i> synthralabs.official@gmail.com </p>
+            <p><i className="fas fa-phone"></i> +91 8243XXXXXX</p>
             <SocialIcons>
               <SocialIcon 
-                href="https://www.linkedin.com/company/synthralabs" 
+                href="https://www.linkedin.com/company/synthra-labs/" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
